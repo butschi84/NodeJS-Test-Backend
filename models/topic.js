@@ -1,19 +1,20 @@
 const Joi = require("joi");
 const fs = require('fs');
 const winston = require("winston");
+const config = require("config");
 
 // save all topics to file
 function saveFile(topics) {
   const saveText = JSON.stringify(topics);
 
-  fs.writeFile('storage/storage.txt', saveText, function (err) {
+  fs.writeFile(config.storagePath, saveText, function (err) {
     if (err) return winston.error(err);
   });
 }
 async function getTopics() {
   winston.info("loading topics from storage file");
   try {
-    const content = fs.readFileSync('storage/storage.txt');
+    const content = fs.readFileSync(config.storagePath);
     return JSON.parse(content);
   }catch{
     winston.error("could not load topics from file");

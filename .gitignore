@@ -3,3 +3,4 @@ package-lock.json
 uncaughtExceptions.log
 logfile.log
 .DS_Store
+storage.txt
