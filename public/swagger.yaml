@@ -1,0 +1,54 @@
+---
+swagger: "2.0"
+info:
+  version: 1.0.0
+  title: Trendradar API
+basePath: "/api"
+schemes:
+  - https
+  - http
+consumes:
+  - application/json
+tags:
+  - name: topics
+    description: All topics that are measured by trendradar
+paths:
+  "/topics":
+    get:
+      summary: Get list of all topics
+      description: Get list of all topics
+      tags:
+        - topics
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: successful operation
+        "400":
+          description: bad request
+    post:
+      summary: Create a new Topics
+      description: Create a new Topics
+      tags:
+        - topics
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        "200":
+          description: successful operation
+        "400":
+          description: bad request
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+                example: "test"

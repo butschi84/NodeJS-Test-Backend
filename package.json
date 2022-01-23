@@ -1,0 +1,33 @@
+{
+  "name": "butschi-finance-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://bitbucket.butschi.dyndns.org/scm/bf/butschi-finance-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "config": "^3.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-async-errors": "^3.1.1",
+    "joi": "^14.3.1",
+    "joi-objectid": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.5.5",
+    "mysql": "^2.17.1",
+    "swagger-ui-dist": "^3.22.1",
+    "swagger-ui-express": "^4.0.6",
+    "winston": "^2.4.4",
+    "winston-mongodb": "^3.0.1",
+    "yamljs": "^0.3.0"
+  }
+}
