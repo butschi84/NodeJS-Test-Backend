@@ -29,4 +29,8 @@ router.post("/", async (req,res) => {
 
 });
 
+router.delete("/:topic", async (req,res)=> {
+
+});
+
 module.exports = router;
